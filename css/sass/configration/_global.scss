@@ -1,0 +1,15 @@
+@import './mixins';
+/* Start global rules*/
+* {
+    padding: 0;
+    margin: 0;
+    @include prefixer(box-sizing, border-box, webkit moz o ms);
+    text-align: center;
+}
+
+body {
+    font-family: sans-serif;
+    background : #1C2A39;
+}
+
+/* End global rules*/

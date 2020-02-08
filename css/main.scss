@@ -1,0 +1,83 @@
+@import './sass/configration/global';
+@import './sass/configration/extends';
+@import './sass/configration/mixins';
+
+/* Start header*/
+.app{
+    display : flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content : space-between;
+    header {
+        margin : 50px 0;
+        height: 587px;
+        h1{
+            font : {
+                size : 30px;
+                weight : bold;
+            }
+            margin-bottom: 15px;
+            letter-spacing: 1px;
+            color : #FFF
+        }
+        p{
+            font : {
+                size : 20px;
+                weight : normal;
+            }
+            letter-spacing : 1px;
+            color : #777;
+        }
+    }
+    .visual > div {
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+        z-index: -1;
+        @include prefixer(border-radius, 50%, webkit moz o ms);
+    }
+    @keyframes jumpBubble {
+        0% {
+            bottom: 0;
+            left : 20%
+        }
+        50% {
+            bottom: 50%;
+            left : 50%;
+        }
+        100% {
+            bottom: 0;
+            left : 80%;
+        }
+    }
+    .visual > div{
+        position: absolute;
+        bottom: 0;
+        width: 50px;
+        height: 50px;
+    }
+    .pads {
+        background : #1C2A39;
+        width : 100%;
+        display: flex;
+        div {
+            height : 150px;
+            width : 100px;
+            flex : 1;
+            cursor : pointer
+        }
+        .pad1{background : #CA2C68;}
+        .pad2{background : #0067B0;}
+        .pad3{background : #0EAC51;}
+        .pad4{background : #005B50;}
+        .pad5{background : #009B90;}
+        .pad6{background : #D3623B;}
+        span{
+            color : #FFF;
+            line-height: 150px;
+            letter-spacing : 1px
+        }
+    }
+}
+/* End header*/

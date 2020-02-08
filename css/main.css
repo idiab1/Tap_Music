@@ -1,0 +1,89 @@
+/* Start Mixins */
+/* End Mixins */
+/* Start global rules*/
+* {
+  padding: 0;
+  margin: 0;
+  -prefixes-box-sizing: border-box;
+  box-sizing: border-box;
+  text-align: center; }
+
+body {
+  font-family: sans-serif;
+  background: #1C2A39; }
+
+/* End global rules*/
+/* Start Mixins */
+/* End Mixins */
+/* Start header*/
+.app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between; }
+.app header {
+  margin: 50px 0;
+  height: 587px; }
+.app header h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+  color: #FFF; }
+.app header p {
+  font-size: 20px;
+  font-weight: normal;
+  letter-spacing: 1px;
+  color: #777; }
+.app .visual > div {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  z-index: -1;
+  -prefixes-border-radius: 50%;
+  border-radius: 50%; }
+@keyframes jumpBubble {
+  0% {
+    bottom: 0;
+    left: 20%; }
+  50% {
+    bottom: 50%;
+    left: 50%; }
+  100% {
+    bottom: 0;
+    left: 80%; } }
+.app .visual > div {
+  position: absolute;
+  bottom: 0;
+  width: 50px;
+  height: 50px; }
+.app .pads {
+  background: #1C2A39;
+  width: 100%;
+  display: flex; }
+.app .pads div {
+  height: 150px;
+  width: 100px;
+  flex: 1;
+  cursor: pointer; }
+.app .pads .pad1 {
+  background: #CA2C68; }
+.app .pads .pad2 {
+  background: #0067B0; }
+.app .pads .pad3 {
+  background: #0EAC51; }
+.app .pads .pad4 {
+  background: #005B50; }
+.app .pads .pad5 {
+  background: #009B90; }
+.app .pads .pad6 {
+  background: #D3623B; }
+.app .pads span {
+  color: #FFF;
+  line-height: 150px;
+  letter-spacing: 1px; }
+
+/* End header*/
+
+/*# sourceMappingURL=main.css.map */
